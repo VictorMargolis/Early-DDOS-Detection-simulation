@@ -2,7 +2,7 @@
 #include "sampling.h"
 #include <random>
 
-#define SOURCE_FILE "flow.txt"
+#define SOURCE_FILE "flow.txt" // the input file
 #define NUM_OF_USERS 50
 #define PACKETS_PER_USER 100
 #define WINDOW_SIZE 1 // V
