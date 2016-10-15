@@ -16,7 +16,7 @@
 int main() {
 	traffic_array traffic(SOURCE_FILE, NUM_OF_USERS, USER_DEVIATOION, PACKETS_PER_USER);
 	if (traffic.initialization_ckeck() != 0) {
-		return 1;
+		return 1; //failure
 	}
 	run_sampling(&traffic, WINDOW_SIZE, SAMPLE_SIZE, SAMPLE_RATE, WINDOW_TIME, NUM_OF_USERS*PACKETS_PER_USER, SUB_SAMPLING, SUB_SAMPLE_SIZE);
 	return 0;
